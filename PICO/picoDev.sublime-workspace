@@ -1,0 +1,645 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pico",
+				"picoOutcome"
+			],
+			[
+				"fieldset",
+				"fieldsetOffsetleft"
+			],
+			[
+				"field",
+				"fieldsetOffsetTop"
+			],
+			[
+				"err",
+				"errMessageBox"
+			],
+			[
+				"Reac",
+				"ReactDOM"
+			],
+			[
+				"React",
+				"ReactRouter"
+			],
+			[
+				"Html",
+				"HtmlWebpackPluginConfig"
+			],
+			[
+				"dmpMESS",
+				"dmpMESSAGEHEADERcss"
+			],
+			[
+				"dmpWid",
+				"dmpWidgetProxyMask"
+			],
+			[
+				"target",
+				"targetURLDomain"
+			],
+			[
+				"targe",
+				"targetURLDomain"
+			],
+			[
+				"targetURL",
+				"targetURLRemainder"
+			],
+			[
+				"dmpWi",
+				"dmpWidgetProxyMask"
+			],
+			[
+				"Auth",
+				"AuthToken"
+			],
+			[
+				"add",
+				"addPlacardEvents"
+			],
+			[
+				"close",
+				"closeEbookPlacard"
+			],
+			[
+				"searchTerm",
+				"searchTerm"
+			],
+			[
+				"myEboo",
+				"myEbookListing"
+			],
+			[
+				"auth",
+				"authentication_end_point"
+			],
+			[
+				"getEbSource",
+				"getEbSourceFtUrl"
+			],
+			[
+				"book",
+				"bookResults"
+			],
+			[
+				"d",
+				"decimal-leading-zero"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"eit",
+				"eit"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/X/prod/simplekey/picoEditor/js/picoEditor.js",
+			"settings":
+			{
+				"buffer_size": 9589,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"jsfm",
+				"JSFMT: Format the current file"
+			],
+			[
+				"code ",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"htmlprett",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 331.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/X/prod/simplekey/picoEditor",
+		"/X/prod/simplekey/picoEditor/js"
+	],
+	"file_history":
+	[
+		"/X/prod/simplekey/picoEditor/picoEditor.html",
+		"/X/prod/simplekey/picoEditor/js/picoEditor.js",
+		"/X/prod/simplekey/picoEditor/docs/help.html",
+		"/X/prod/simplekey/picoEditor/css/helpDocs.css",
+		"/X/prod/simplekey/picoEditor/css/picoEditor.css",
+		"/C/Users/jknight/Documents/_Library/_DEV/PICO/picoHTML.html",
+		"/C/Users/jknight/Documents/_Library/PICO/picoEditor.js",
+		"/C/Users/jknight/Documents/_Library/PICO/picoHTML.html",
+		"/C/Users/jknight/Documents/_Library/PICO/picoHTML-React.html",
+		"/C/Users/jknight/Documents/_Library/PICO/picoJSX.jsx",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/jknight/Documents/_Library/PICO/picoHTML",
+		"/C/Users/jknight/Documents/__Clients/CMS Energy/todos",
+		"/C/Users/jknight/Documents/__Clients/CMS Energy/doc/eisSupport.html",
+		"/C/Users/jknight/Documents/__Clients/CMS Energy/doc/css/eisSupport.css",
+		"/C/Users/jknight/Documents/__Clients/CMS Energy/eisSupport.html",
+		"/X/prod/simplekey/dynamedPlus/js/dmpPlacardScript.js",
+		"/X/prod/simplekey/dynamedPlus/js/dmpPlacardScript-v1.2bx.js",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/jsfmt/jsfmt.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/jsfmt.sublime-settings",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/components/Main.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/config/routes.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/index.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/index.html",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/components/Home.js",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/Babel.sublime-settings",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/app/index.jsx",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/package.json",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/.babelrc",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/webpack.config.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/sftp-config.json",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/index.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/reactapp/github-battle/index.html",
+		"/C/Users/jknight/AppData/Local/Temp/scp47711/home/ec2-user/vim/plugin/autoclose.vim",
+		"/X/prod/simplekey/dynamedPlus/readme.md",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacard-v1.2bx.js",
+		"/X/prod/simplekey/dynamedPlus/js/dmpPlacardScript-v1.3bx.js",
+		"/X/prod/simplekey/dynamedPlus/dmp_v1.3bx.html",
+		"/X/prod/simplekey/dynamedPlus/dmp_v1.2bx.html",
+		"/X/prod/simplekey/dynamedPlus/js/dmpPlacard-v1.3bx.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmp_v1.3ax.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacard-v1.3ax.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacard-v1.2a.js",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/css/dmpPlacard.css",
+		"/C/Users/jknight/AppData/Local/Temp/scp00498/home/jknight/www/dmp/placard/js/consoleWrapper.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp53456/home/jknight/www/dmp/placard/js/dmpPlacard-v1.3ax.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/sftp-config.json",
+		"/X/prod/simplekey/dynamedPlus/sftp-config.json",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/node_modules/sftp-config.json",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/.eslintrc.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp05967/home/jknight/www/dmp/placard/js/dmpPlacard-v1.3ax.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp35605/home/jknight/www/dmp/placard/js/dmpPlacard-v1.3ax.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacard-v1.3a.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v1.2bx.js",
+		"/X/dev/simplekey/dynamedPlus/dmp_v1.2bx.html",
+		"/Z/prod/simplekey/dynamedPlus/js/dmpPlacardScript.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/alvet-eds.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/node_modules/readable-stream/lib/_stream_readable.js",
+		"/Z/prod/simplekey/dynamedPlus/js/dmpPlacard.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/function.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmp_v1.3x.html",
+		"/X/dev/simplekey/dynamedPlus/dmp.html",
+		"/X/dev/simplekey/dynamedPlus/readme.md",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmp_v1.2x.html",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v1.1b.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v1.2a.js",
+		"/X/dev/simplekey/dynamedPlus/dmp_v1.2x.html",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacard-v1.2a.js",
+		"/Z/dev/simplekey/dynamedPlus/dmp_v1.1b.html",
+		"/Z/dev/simplekey/dynamedPlus/dmp_v2.0x.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmp_v1.1b.html",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v1.1a.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacard.js",
+		"/X/dev/simplekey/dynamedPlus/dmp_v1.1a.html",
+		"/C/Users/jknight/Documents/_Library/EDS/_API/api.php",
+		"/C/Users/jknight/Documents/_Library/EDS/_API/eds.php",
+		"/C/Users/jknight/Documents/_Library/EDS/_API/index.php",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v2.nx.js",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacardScript-exp.js",
+		"/C/Users/jknight/Documents/__Clients/Merck KGAA/romppWidget.html",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacardScript-exp-2.js",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacardScript.js",
+		"/C/Users/jknight/Documents/__Clients/Delphi/learningPortal/js/main.js",
+		"/C/Users/jknight/Documents/__Clients/Loyola University Health/edsBranding/js/edsBranding.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/Sandbox/i.html",
+		"/X/dev/simplekey/dynamedPlus/js/jstype.html",
+		"/X/dev/simplekey/dynamedPlus/profiles.json",
+		"/X/dev/simplekey/dynamedPlus/spotlight.php",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-v1.0a.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacardScript-1.0a.js",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacard-v1.1a.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacard-v2.x.js",
+		"/X/dev/simplekey/dynamedPlus/dmp_v2.0x.html",
+		"/X/dev/dsetest/jknight/eform.html",
+		"/X/dev/simplekey/dynamedPlus/js/dmpPlacard-v2.x.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/alvet-dmp.js",
+		"/X/dev/simplekey/dynamedPlus/dmp-v2.0a.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dmpPlacardScript.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/js/dynamed-claus.js",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/jknight/Downloads/delivery-1.ris",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacard.js",
+		"/C/Users/jknight/Downloads/appstarter (2).js",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacardScript-2.js",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/ESLint/Default (Windows).sublime-keymap",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/podboy-starter.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/widgets101 - archived versions from widget server/dynamedPlus - 10Dec15/js/dmpPlacard.html-ref.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmPlacard-starter.html",
+		"/Z/dev/simplekey/dynamedPlus/js/dmpPlacard-v2.0a.js",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/dmPlacard.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/placard-v0.2a.html",
+		"/Z/dev/simplekey/dynamedPlus/dmp-v2.0a.html",
+		"/Z/dev/simplekey/dynamedPlus/gateway.php",
+		"/Z/dev/simplekey/dynamedPlus/dmp.html",
+		"/Z/dev/simplekey/dynamedPlus/dm_old.html",
+		"/C/xampp/htdocs/bentoAngular/Builder/Gruntfile.js",
+		"/C/xampp/htdocs/bentoAngular/Builder/README.md",
+		"/C/xampp/htdocs/bentoAngular/Builder/app/index.html",
+		"/C/xampp/htdocs/bentoAngular/Builder/dist/user.php",
+		"/Z/prod/simplekey/dynamedPlus/gateway.php",
+		"/C/Users/jknight/Documents/__Clients/Parkland Medical/iframe.html",
+		"/C/Users/jknight/AppData/Local/Temp/scp38706/home/jknight/www/lib/api/ford/gateway.php",
+		"/C/xampp/htdocs/ford/index.php",
+		"/C/Users/jknight/AppData/Local/Temp/scp49214/jknight/api/ford/gateway.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"X:\\prod\\simplekey\\picoEditor",
+			"",
+			"Z:\\prod\\simplekey\\dynamedPlus",
+			"C:\\xampp\\htdocs\\ford"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"search",
+			"trackQEcall",
+			"http://",
+			"picoEditor",
+			"widgets101",
+			"ol",
+			"p>",
+			"\"",
+			"requird",
+			"source",
+			"button",
+			"picoIntervention",
+			"errMessageBox",
+			"button",
+			"topic",
+			"picoForm",
+			"consolelog",
+			"condition",
+			"Condition",
+			"picoCondition",
+			"type=\"text\"",
+			"        '<span class=\"help\" topic=\"population\">?</span>' +\n",
+			"form",
+			"</h4>",
+			"outcome",
+			"title",
+			"class=\"help\"",
+			"outcome",
+			"population",
+			"body",
+			"react=\"",
+			"react=",
+			"basicItem",
+			"Query Editor",
+			"theQEBox",
+			"pico-search",
+			"big-search",
+			"queryEditor",
+			"queryEditor2",
+			" = ",
+			"=\n                    ",
+			" pico",
+			"{ ",
+			"picoSearch",
+			"<label",
+			"label",
+			"type=\"text\">",
+			"pico",
+			"picoPop",
+			"pico",
+			"\"text\">",
+			"ip,uid",
+			"<div>",
+			"</h4>",
+			"span",
+			"a href",
+			"</h4>",
+			"</a></li>",
+			"href=\"\"",
+			"<h4>",
+			"h4",
+			"this.",
+			"searchbar",
+			"bdi",
+			"a",
+			": \" +",
+			"console.log",
+			".query",
+			"query",
+			"\"background:#38f\"",
+			"#38f\"",
+			"dmpMESSAGEHEADER",
+			"warn(",
+			"console.",
+			"dmpPLACARDMESSAGE",
+			".query",
+			"query",
+			"viewAll.Plink",
+			"dmpPLACARDMESSAGE",
+			"dmpPlacardMessageLabel",
+			"return",
+			"dmpWidgetProfile",
+			"parseCustProfile",
+			"dmpWidgetProfile",
+			"\"DMP Placard || \"",
+			"dmpWidgetProfile",
+			"parseC",
+			"parseCust",
+			"('",
+			"console.log",
+			"X",
+			"placardControl",
+			"closePla",
+			".log",
+			"log",
+			"console.log",
+			"{targetURL",
+			"targetURL",
+			"queryData.ti",
+			"targetURLDomain",
+			".data",
+			"$",
+			";,",
+			" + 1",
+			"searchImages",
+			"dmpHome",
+			"jQuery",
+			"document.getElementById",
+			"AutoResize",
+			"dmpWidgetAuthtype",
+			"dmpWidgetProfile",
+			"profile",
+			"pageContext",
+			"searchTerm",
+			"authtype.split",
+			"buildPlinks",
+			"dmpWidgetAuthtype",
+			"buildPlinks",
+			"authtype",
+			"\"&authtype=\" + authURL.query.authtype + ",
+			"profile",
+			"profile.status",
+			"dmpWidgetCss",
+			"dmpCSSPATH",
+			".css",
+			"searchimages",
+			"searchImages",
+			"11"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#picoForm",
+			"searchImages",
+			"\n  ",
+			"",
+			"&#39;",
+			"</li>",
+			"user=kidsmatter&password=lahospital",
+			" ",
+			"custid=ns210071&profile=bbs",
+			"authtype=sso"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/X/prod/simplekey/picoEditor/js/picoEditor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7950,
+								7950
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/iPlastic (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1834.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 147.0
+	},
+	"pinned_build_system": "",
+	"project": "picoDev.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"_css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

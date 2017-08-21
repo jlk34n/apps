@@ -1,0 +1,409 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"border-right-r",
+				"border-bottom-right-radius"
+			],
+			[
+				"carousel",
+				"carousel-box"
+			],
+			[
+				"ul",
+				"ulSection"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 703.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jknight/AppData/Local/Temp/scp39716/home/jknight/www/biomarin/lmlcWidget/lmsWidget-v2b.html",
+		"/X/prod/customerspecific/ns016677/lmlcWidget/css/jquery-ui-custom.css",
+		"/X/prod/encryptedkey/eit/themes/image_carousel_slick/style.css",
+		"/C/Users/jknight/AppData/Local/Temp/scp07537/home/jknight/www/biomarin/lmlcWidget/css/jquery-ui-custom.css",
+		"/H/ns016677/lmlcWidget/js/main.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp57799/home/jknight/www/biomarin/lmlcWidget/css/jquery-ui-custom.css",
+		"/H/ns016677/lmlcWidget/lmsWidget-v2b.html",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/lmsWidget-v2b.html",
+		"/H/ns016677/lmlcWidget/css/jquery-ui-custom.css",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/carousel-in-iframe.html",
+		"/X/prod/encryptedkey/ehis/widget.php",
+		"/X/prod/encryptedkey/eit/eit.php",
+		"/H/ns016677/lmlcWidget/css/main4lms.css",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/lmsWidget-sm2.html",
+		"/H/ns016677/lmlcWidget/index-May17.html",
+		"/H/ns016677/lmlcWidget/index.html",
+		"/C/Users/jknight/documents/__clients/BioMarin/lmlcWidget/index-Apr16.html",
+		"/H/ns016677/lmlcWidget/index-March17.html",
+		"/H/ns016677/lmlcWidget/css/main-dev.css",
+		"/H/ns016677/lmlcWidget/css/main.css",
+		"/H/ns016677/lmlcWidget/index-dev.html",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/index-Feb17.html",
+		"/C/Users/jknight/AppData/Local/Temp/scp39548/home/ec2-user/server.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp14992/home/ec2-user/node/server.js",
+		"/H/ns016677/lmlcWidget/index-November.html",
+		"/C/Users/jknight/documents/__clients/BioMarin/lmlcWidget/css/main.css",
+		"/C/Users/jknight/documents/__clients/BioMarin/lmlcWidget/email.html",
+		"/H/ns016677/lmlcWidget/index-September.html",
+		"/C/Users/jknight/documents/__clients/BioMarin/lmlcWidget/RE BioMarin Website Monthly Updates.msg",
+		"/C/Users/jknight/Downloads/document.pdf",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/index-Jan15.html",
+		"/I/ns016677/lmlcWidget/index.html",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/email.html",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcPortal/lmlcPortal - Shortcut.lnk",
+		"/C/Users/jknight/Documents/__Clients/BioMarin/lmlcWidget/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/C/Users/jknight/Documents/__Clients/Black & Veatch/compendexWidget.html",
+		"/C/Users/jknight/Documents/__Clients/Devon Canada/edsPortal/holding-tank.html",
+		"/C/Users/jknight/Documents/__Clients/Devon Canada/edsPortal/css/main-2.css",
+		"/C/Users/jknight/Documents/__Clients/Devon Canada/edsPortal/index-2.html",
+		"/C/Users/jknight/Documents/__Clients/Dominos/learningPortal/public_html/index.html",
+		"/Z/s2801823/index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/Dominos Learning Center/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/main.css",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/js/myutils.js",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/seagen-index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/js/competencies.js",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/skin.css",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/jCarousel.css",
+		"/C/Users/jknight/Documents/Clients/Astellas/Astellas - eBookWidget/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/carousel.htm",
+		"/C/Users/jknight/Documents/Clients/Bare Escentuals/BareEscentuals - Learning Collection (learning) - Footer _ s3866574 _dev03.html",
+		"/C/Users/jknight/Documents/Clients/Bare Escentuals/BE - Top-Branding - ns233815 _dev1.1.html",
+		"/C/Users/jknight/Documents/Clients/Clorox/LMLC/Widgets/CloroxLMLC - Comp-widget - s2835421 _dev1.3c.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/carousel.css",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/tangoSkin.css",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/jknight/Documents/Clients/SSM University/searchWidget/index.html",
+		"/C/Users/jknight/Documents/Clients/Dominos/learningPortal/public_html/css/linklist.css",
+		"/C/Users/jknight/Documents/Clients/Dominos/Dominos Learning Center/public_html/dominosLearningPortal.sublime-project",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/C/Users/jknight/Documents/Clients/Motorola/motorolaAdvancedSearchWidget/public_html/css/main.css",
+		"/C/Users/jknight/Documents/Clients/Motorola/motorolaAdvancedSearchWidget/public_html/index-2.0a-27jn14.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/motorolaAdvancedSearchWidget/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/basicSearchBottom.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/_old-basicSearchBottomJSON.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/css/brandingStyles.css",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/_old-basicSearchBottomJSON.js",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/_old-basicSearchBottomJSON"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://",
+			"color",
+			"2px 12px",
+			"one5",
+			"5",
+			"115420450",
+			"summary",
+			"</li>",
+			"<li>",
+			"box-shadow",
+			"inline",
+			"list-style",
+			"<li>",
+			" & ",
+			"115420450",
+			"108996022",
+			"112970238",
+			"112961643",
+			"113547506",
+			"114399782",
+			"112847479",
+			"115228236",
+			"60271963",
+			"db=",
+			"92578654",
+			"102773732",
+			"103147418",
+			"102966745",
+			"102785002",
+			"108996022",
+			"res",
+			"res.",
+			"\"",
+			"`",
+			"res.",
+			"115830214",
+			"112819566",
+			"114250769",
+			"114508286",
+			"60270709",
+			"94361587",
+			"98410768",
+			"60270723",
+			"99577256",
+			"99537503",
+			"110463128",
+			"31949248",
+			"58688913",
+			"66729851",
+			"60271981",
+			"87672889",
+			"92578654",
+			"102773732",
+			"103147418",
+			"102966745",
+			"102785002",
+			"108996022",
+			"108956329",
+			"100934583",
+			"98848202",
+			"100066102",
+			"100934583",
+			"&db=cpw",
+			"db=h2r",
+			"59947244",
+			"60271977",
+			"93302853",
+			"97190588",
+			"100647381",
+			".navBox",
+			"4",
+			"51665324",
+			"border-box",
+			"ms-rtethemeforecolor-6-4",
+			"color",
+			"italic",
+			"see all",
+			"color",
+			"&&",
+			"44e",
+			"0000",
+			"authtype=uid&user=ns01677&password=main",
+			"margin",
+			"=",
+			"submit",
+			"#",
+			"infoLinks",
+			"font-size",
+			"background",
+			"infoLinks",
+			"edb731",
+			"infoLink",
+			"3px",
+			"rgba",
+			"edb731",
+			"gass",
+			"606060",
+			"a1a2a3",
+			"font-size",
+			"a ",
+			"contact us",
+			".portalContainer ",
+			"portalContainer",
+			".portalContainer ",
+			"&password=password",
+			"477628",
+			"466633",
+			"430389",
+			"411443",
+			"388984",
+			"&password=password",
+			"column",
+			"type=1",
+			"999",
+			"font-size",
+			"type=1",
+			"a {",
+			"24%",
+			": \"",
+			"user=seagenusera&password=password",
+			"user=seagenusera&db=e276sww",
+			"008652",
+			"li",
+			"L",
+			"leadership",
+			"Intelligence",
+			"Communication",
+			"communication-skills"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"> see all",
+			"&",
+			"ecb731",
+			"Gas",
+			":\"",
+			"-->"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "picoHTML.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
