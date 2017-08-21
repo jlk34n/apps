@@ -1,0 +1,677 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"queryEd",
+				"queryEditorTa"
+			],
+			[
+				"qe2",
+				"queryEditor2"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"d",
+				"decimal-leading-zero"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"eit",
+				"eit"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "queryEditorTa-v1.1d.js",
+			"settings":
+			{
+				"buffer_size": 6723,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/X/prod/simplekey/queryEditor/queryEditorTa.js",
+			"settings":
+			{
+				"buffer_size": 6723,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.html",
+			"settings":
+			{
+				"buffer_size": 535,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// queryEditor by jknight@ebsco.com (shoutout to Ariana Hazen for help w/ the auto popout and label customization)\n// v1.1d\nvar trackQEcall = setInterval(function() {\n    console.log('running trackQEcall');\n    if (window.jQuery) {\n        clearInterval(trackQEcall);\n        queryEditor2();\n    }\n}, 10);\n\n// Add Customisations here. Break out to functions where possible.\nfunction queryEditor2() {\n    if (QueryString('sdb') == 'edspub') return; // stop custom application if this is ftf\n    // used to ensure the code is run only once.\n    if (jQuery('body').data('queryEditor') == 1) {\n        console.log(jQuery('body').data('queryEditor'));\n        return;\n    } else { jQuery('body').attr('data-queryEditor', '1'); }\n\n    // Execute code only in the basic search or results page \n    // if ( (document.location.pathname == \"/eds/results\") || (document.location.pathname == \"/eds/search/basic\") || (document.location.pathname == \"/eds/search/advanced\") || (document.location.pathname == \"/eds/resultsadvanced\") ) {\n\n    // create and assemble the big-search box\n    var theQEBox = jQuery('<div />', { class: 'xbox', id: 'big-search', style: 'display:none;' })\n        .append(jQuery('<div />', { id: 'close-xbox' })\n            .append(jQuery('<span />', { title: 'click to close the query editor textarea' })))\n        .append(jQuery('<textarea />', { autofocus: '', name: 'the-big-search', id: 'big-textarea', placeholder: 'Enter extended search expression here' }));\n\n    console.log('.find-field-inputs-row, .find-field-position is : ' + jQuery('.find-field-inputs-row, .find-field-position'));\n    jQuery('.find-field-inputs-row, .find-field-position').before(jQuery(theQEBox));\n\n    // place the xbox search link inline w/ other search options; place big-search after the SearchTerm1 box\n    console.log('#basicItem is : ' + jQuery('#basicItem'));\n    jQuery('#basicItem').after('<li id=\"xboxItem\" class=\"find-field-link\"><a href=\"#\" id=\"xboxAnchor\" alt=\"Edit lengthy query expressions\" title=\"Opens a separate textarea for editing long and complex query expressions\">Query Editor</a></li>');\n    jQuery('#xboxItem').css('cursor', 'pointer');\n    // jQuery('.find-field-inputs-row').before(jQuery('#big-search'));\n\n    // attach event listener\n    jQuery('#xboxItem').on('click', function(e) {\n        e.preventDefault();\n        var searchTerm = jQuery('#SearchTerm1, #Searchbox1').val();\n        // jQuery('#big-textarea').text('');\n        // jQuery('#big-textarea').text(searchTerm);\n        jQuery('#big-textarea').val(searchTerm);\n        jQuery('#big-search').show();\n        jQuery('#SearchTerm1, #Searchbox1').css({\n            background: '#dadada'\n        });\n    });\n\n    jQuery('#big-textarea').keyup(function() {\n        var keyval = jQuery(this).val();\n        jQuery('#SearchTerm1, #Searchbox1').val(keyval);\n    }).keyup();\n\n    jQuery('#SearchTerm1, #Searchbox1').focus(function() {\n        jQuery('#big-search').hide();\n        jQuery('#SearchTerm1, #Searchbox1').css({ background: '#fff' });\n    });\n\n    jQuery('#close-xbox').on('click', function(e) {\n        e.preventDefault();\n        jQuery('#big-search').hide();\n        jQuery('#SearchTerm1, #Searchbox1').css({ background: '#fff' });\n    });\n\n    // }\n\n    // Add CSS\n    jQuery('head').append('<link rel=\"stylesheet\" type=\"text/css\" href=\"http://gss.ebscohost.com/jknight/qe2/css/queryEditor.css\">');\n\n    // shim to fix IE placeholder issue w/ jQuery\n    jQuery('[placeholder]').focus(function() {\n        var input = jQuery(this);\n        if (input.val() == input.attr('placeholder')) {\n            input.val('');\n            input.removeClass('placeholder');\n        }\n    }).blur(function() {\n        var input = jQuery(this);\n        if (input.val() == '' || input.val() == input.attr('placeholder')) {\n            input.addClass('placeholder');\n            input.val(input.attr('placeholder'));\n        }\n    }).blur();\n\n}\n\n\n// Used to control the display of content in specific pages.\nfunction DisplayMe(blocks, id) {\n    if (QueryString('sdb') == 'edspub') return; // stop custom application if this is ftf\n    //basic,advanced,detail,results,resultsadvanced\n    var displayBlocks = blocks.split(\",\")\n    for (i = 0; i < displayBlocks.length; i++) {\n        if (document.URL.indexOf(\"/\" + displayBlocks[i] + \"?\") > -1) {\n            document.getElementById(id).style.display = \"block\";\n        }\n    }\n}\n/* EXAMPLE - ensure DisplayMe loads first.\n    <span id=\"linklist\" style=\"display:none;\">\n        <script>DisplayMe('basic',\"linklist\")</script>\n    <!—INSERT CONTENT HERE -->\n    </span>\n*/\n\nfunction QueryString(key) {\n    var re = new RegExp('(?:\\\\?|&)' + key + '=(.*?)(?=&|$)', 'gi');\n    var r = [],\n        m;\n    while ((m = re.exec(document.location.search)) != null) r.push(m[1]);\n    return r;\n}\n",
+			"file": "queryEditorTa.js",
+			"file_size": 4924,
+			"file_write_time": 131395116846739668,
+			"settings":
+			{
+				"buffer_size": 4808,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlprett",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/jknight/Documents/_Library/queryEditor",
+		"/X/prod/simplekey/queryEditor"
+	],
+	"file_history":
+	[
+		"/C/Users/jknight/Documents/_Library/queryEditor/sftp-config.json",
+		"/H/s9845930/publist/eisPubList.html",
+		"/X/prod/simplekey/queryEditor/queryEditorTa.js",
+		"/C/Users/jknight/Documents/_Library/queryEditor/queryEditorTa-v1.1b.js",
+		"/X/prod/simplekey/queryEditor/queryEditorT.js",
+		"/C/Users/jknight/AppData/Local/Temp/scp47638/home/jknight/www/qe2/queryEditorTa.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/test.html",
+		"/X/prod/simplekey/queryEditor/css/queryEditor.css",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/css/queryEditor.css",
+		"/C/Users/jknight/AppData/Local/Temp/scp03991/home/jknight/www/qe2/css/queryEditor.css",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/bigsearchbox-ariana.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/queryEditorTa-v1.1a.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/queryEditorTa.js",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/css/bigsearchbox.css",
+		"/C/Users/jknight/Documents/_Library/_DEV/queryEditor/sftp-config.json",
+		"/C/Users/jknight/Documents/_Library/_DEV/AWS/www/sftp-config.json",
+		"/H/s1052699/edsPortal/carousel/eis-carousel-3.html",
+		"/H/s1052699/edsPortal/carousel/eis-carousel-2.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/carousel/eis-carousel-2.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/carousel/js/jquery.jcarousel.min2.js",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/index.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/css/main.css",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/test.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/carousel/css/skins.css",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/carousel/eis-carousel.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/testNavBar.html",
+		"/C/Users/jknight/Documents/__Clients/Aerospace Corp/edsPortal/carousel/css/master.eisstyles.css",
+		"/C/Users/jknight/Documents/__Clients/Ford/KC/searchBox/index.html",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/functions.php",
+		"/C/Users/jknight/Documents/_Library/Dynamed/Placard/index.php",
+		"/C/Users/jknight/Documents/_Library/_DEV/Flipster/image/next-horizontal.png",
+		"/C/Users/jknight/Documents/_Library/_DEV/Flipster/image/prev-horizontal.png",
+		"/C/Users/jknight/Documents/_Library/_DEV/_Libraries/html5-boilerplate-4.3.0/css/main.css",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/snippet.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/es_sh-v0.3f.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/es_sh-v0.3e.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/carousel.html",
+		"/O/s1214198/eds-tabs/index.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/topBranding.html",
+		"/O/s1214198/eds-branding/js/jquery.jcarousel.js",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/css/jcarousel-skin-tango.css",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/books.json",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/carousel2.js",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/dmMobileInstructions.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/es_sh-v0.3b.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/dmPlacard.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/ovidClineguide.html",
+		"/Z/prod/simplekey/dynamed/index.php",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/meshTermsWidgets.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/es_sh-v0.3a.html",
+		"/C/Users/jknight/Documents/__Clients/Astellas/bcpWidget/index.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/js/eptemplate.js",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/edsBranding/jsonBooks.json",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/resultWidgets/extendSearch/js/jquery-ui-1.10.4.custom.js",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/resultWidgets/extendSearch/test.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/jqueryUI/jquery-ui-1.11.2.custom/index.html",
+		"/C/Users/jknight/Documents/__Clients/Sparrow HS/accordianResultsWidget.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/basicSearchTop.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/August72014.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/June52014.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/basicSearchBottom-July22014.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/basicSearchBottom.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/July22014.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/_old-trialBasicSearchBottom.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/mit_basicSearchBottom.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/brandingMotorolaEDS/public_html/mts-banner.html",
+		"/C/Users/jknight/Documents/_DEV/SublimeText2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/index.htm",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/jknight/Documents/_DEV/SublimeText2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/roux-website.sublime-project",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/jknight/Documents/_DEV/SublimeText2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/_css/main.css",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/jknight/Documents/_DEV/SublimeText2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/_scripts/SpryTabbedPanels.js",
+		"/C/Users/jknight/Documents/Clients/Motorola/add-to-favorites",
+		"/Y/dev/dynamed.php",
+		"/C/Users/jknight/Documents/_Library/DynamedIntegrationProject/HL7-infobutton-testURLs",
+		"/C/Users/jknight/Documents/Clients/Holland America/brandingTop/HA-ns205439-ehostTopBranding.html",
+		"/C/Users/jknight/Documents/Clients/Holland America/brandingTop/css/tabs.css",
+		"/C/Users/jknight/Documents/Clients/Holland America/ebsco-widget.htm",
+		"/C/Users/jknight/Documents/Clients/Holland America/Portal/index.html",
+		"/C/Users/jknight/Documents/Clients/Holland America/Widget link worksheeet.html",
+		"/C/Users/jknight/Documents/Clients/Holland America/brandingBottom/HA-ns205439-bottomBranding-dev0.0a.html",
+		"/C/Users/jknight/Documents/Clients/Holland America/Widgets/HA-EBSCO-smMSW_dev2.0a.html",
+		"/Z/ns022136/avnet-bbsWidgetCarousel-dev2.0a_responsive.html",
+		"/Z/jknight/bbsFeed.html",
+		"/C/Users/jknight/Documents/Clients/Pioneer Natural Resources/Pioneer Natural Resources Portal/public_html/index.html",
+		"/C/Users/jknight/Documents/Clients/Motorola/motorolaAdvancedSearchWidget/public_html/js/ebscohostsearch.js",
+		"/C/Users/jknight/Documents/Clients/Motorola/motorolaAdvancedSearchWidget/public_html/index.html",
+		"/Y/dev/dsetest/jknight/bm.html",
+		"/Y/dev/dsetest/reflector/index.php",
+		"/Z/jknight/ref.html",
+		"/C/Users/jknight/Documents/_Library/DynamedIntegrationProject/DynamedPortal/public_html/index.html",
+		"/C/Users/jknight/Documents/_DEV/index.html",
+		"/C/Users/jknight/Desktop/DSE Widget Server Guidelines.html",
+		"/C/Users/jknight/Documents/Clients/Nationwide/Branding/Nationwide - basicBottomBranding6_dev1.0c.js",
+		"/Z/s3216391/js/ebscohostsearch.js",
+		"/Z/s6719959/portal/index.htm",
+		"/Y/dev/common/javascript/jquery.jcarousel.js",
+		"/Z/s3216391/default.htm",
+		"/Z/s1015417/eds/default.htm",
+		"/Z/ns013291/leaders/default.htm",
+		"/C/Users/jknight/Documents/Clients/VA Long Beach/Branding/VALBHS-s2624486-searchBoxMH_dev0.0.html",
+		"/C/Users/jknight/Documents/Clients/Holland America/Portal/HollandAmerica PI Portal/public_html/index.html",
+		"/C/Users/jknight/Documents/_Library/HL7/src/com/epnet/eit/web/RecordRequestHelper.java",
+		"/C/Users/jknight/Documents/_Library/HL7/src/com/epnet/eit/web/RecordServiceServlet.java",
+		"/C/Users/jknight/Documents/_Library/HL7/Demo_EIT2.war",
+		"/C/Users/jknight/Documents/Clients/Motorola/surveyWidget.html",
+		"/C/Users/jknight/Documents/Clients/Children's Hospital LA/bottomBranding.html",
+		"/C/Users/jknight/Documents/Clients/Children's Hospital LA/meshTermsWidget.html",
+		"/C/Users/jknight/Documents/Clients/VA Long Beach/Branding/VALBHS-s2624486-searchBoxSW_dev0.0.html",
+		"/C/Users/jknight/Documents/Clients/Children's Hospital LA/pocWidget.html",
+		"/C/Users/jknight/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/C/Users/jknight/Documents/Clients/Ely Lilly/Branding HTML - bottom.html",
+		"/C/Users/jknight/Documents/Clients/Target/Target BSC Widget/public_html/index.html",
+		"/Y/prod/customlink/ill/conf/ns211501.json",
+		"/Y/dev/customerspecific/ns211501/ill/conf/ns211501.json",
+		"/C/Users/jknight/Documents/Clients/Dominos/Dominos Learning Center/public_html/nestle.htm",
+		"/C/Users/jknight/Documents/Library/Widgets/mdConsultWidget.html",
+		"/C/Users/jknight/Documents/Library/Widgets/mdConsultWidget"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"DisplayMe",
+			"QueryString",
+			"pVal",
+			"> ",
+			" </a>",
+			"  </a>",
+			"> ",
+			"  </a>",
+			"  <",
+			"</li>\n        <coverageEnd>",
+			"this version",
+			"search').focus()",
+			"qops.charlimit",
+			"elementInsert",
+			"\"Advances in Batteries for Medium- and Large-Scale Energy Storage\"",
+			"title=",
+			"alt",
+			"img/knovel",
+			"src=\"http",
+			"tango\" href",
+			"\"Collaborative Project Procurement Arrangements\"",
+			"\"Certified Quality Improvement Associate Handbook - Basic Quality Principles and Practices 3rd Edition\"",
+			"\"Building Security Rating System - Checklists to Assess Risks, Consequences, and Security Countermeasures\"",
+			"\"ASQ Pocket Guide to Failure Mode and Effect Analysis (FMEA)\"",
+			"\"Anti-Abrasive Nanocoatings - Current and Future Applications\"",
+			"http://imageserver.ebscohost.com/branding/s1052699/edsPortal/carousel/img/",
+			"Aeroelastic Vibrations and Stability of Plates and Shells",
+			"\"\"",
+			"\"Advanced Quality Auditing - An Auditor's Review of Risk Management, Lean Improvement, and Data Analysis\"",
+			"navbar",
+			"img src=\"",
+			"http://imageserver.ebscohost.com/branding/s1052699/edsPortal/carousel/img/",
+			"<li>\n                                <a",
+			"http://imageserver.ebscohost.com/branding/s1052699/edsPortal/carousel/img/[]",
+			"[]",
+			"A-Z",
+			"siding",
+			"ebooks",
+			"browse",
+			"elsevier",
+			"href",
+			"-",
+			"http://pages.aero.org/lirc/files/2015/04/",
+			"Resources",
+			"toggle",
+			".navbar",
+			"center",
+			".navbar",
+			"fadeIn",
+			"toggle",
+			"> <",
+			".nav",
+			"</li>",
+			"value",
+			">>",
+			"option",
+			"/li",
+			"https",
+			"<li",
+			" value=",
+			"option",
+			"input",
+			":hover",
+			"img",
+			"255",
+			"img",
+			"\n",
+			"/img",
+			"/image",
+			"// ",
+			"review of ",
+			" shape=\"rect\"",
+			".carousel",
+			" width=\"80\" height=\"120\"",
+			"window",
+			"position",
+			"bg-p1",
+			"display",
+			"ol",
+			"$",
+			".dmMb",
+			".images",
+			".",
+			"p>",
+			"p",
+			"caption",
+			"#EDF3FB",
+			"background",
+			"            <!-- <iframe src=\"carousels.html\" frameborder=\"0\"></iframe> -->\n",
+			"iframe",
+			"true",
+			"false",
+			"  ",
+			"  ",
+			" ",
+			" ",
+			"666",
+			"/data/Books/harr/{}.png",
+			"Author name",
+			"panela",
+			"Dynamed",
+			"eguide",
+			"ACP",
+			"StatRef!",
+			"beta-",
+			"';\n",
+			"beta-banner",
+			"TODO",
+			"and",
+			"_is",
+			"Access",
+			"’",
+			"&apos;",
+			"’",
+			"<",
+			"•\t",
+			"o\t",
+			"o",
+			"•",
+			"o",
+			"/*",
+			"chkObject",
+			"user=eds_med_links&password=selleds",
+			"  ",
+			"cwolf",
+			"user=ns210071&password=password&profile=bbs",
+			"authtype=uid",
+			"$callback"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/img",
+			"",
+			"&#39;",
+			"</li>",
+			"user=kidsmatter&password=lahospital",
+			" ",
+			"custid=ns210071&profile=bbs",
+			"authtype=sso"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "queryEditorTa-v1.1d.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								6723
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/iPlastic (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/X/prod/simplekey/queryEditor/queryEditorTa.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6723,
+								6723
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/iPlastic (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2099.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/iPlastic (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "queryEditorTa.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/iPlastic (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "queryEditor.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"_css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
