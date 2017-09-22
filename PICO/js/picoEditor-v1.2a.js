@@ -4,7 +4,7 @@
     4may17 -- added data-label value to customize link label (default: PICO Search)
     24may17 -- changed search pattern to AND all terms and make Comparison a Recommended field
     22aug17 v1.1a -- add ability to choose position of link label; refactored the data- parms
-    14sep17 v1.2a -- add ability to modify header text; 1.2b adds default value
+    14sep17 v1.2a -- add ability to modify header text
 */
 var trackPicoCall = setInterval(function() {
     console.log('running trackPicoCall');
@@ -29,7 +29,6 @@ function picoEditor() {
     var pops = jQuery('#pe2script').data();
     var afterWhat = { "options": "optionsItem", "basic": "basicItem", "history": "historyItem", "advanced": "advancedItem" };
     pops.label = pops.label || 'PICO Search',
-        pops.header = pops.header || 'PICO Search for EDS',
         pops.after = afterWhat[pops.after] || afterWhat['advanced'],
         pops.css = pops.css || '//widgets.ebscohost.com/prod/simplekey/picoEditor/css/picoEditor.css';
 

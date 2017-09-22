@@ -29,7 +29,7 @@ function picoEditor() {
     var pops = jQuery('#pe2script').data();
     var afterWhat = { "options": "optionsItem", "basic": "basicItem", "history": "historyItem", "advanced": "advancedItem" };
     pops.label = pops.label || 'PICO Search',
-        pops.header = pops.header || 'PICO Search for EDS',
+    	pops.header = pops.header || 'PICO Search for EDS',
         pops.after = afterWhat[pops.after] || afterWhat['advanced'],
         pops.css = pops.css || '//widgets.ebscohost.com/prod/simplekey/picoEditor/css/picoEditor.css';
 
